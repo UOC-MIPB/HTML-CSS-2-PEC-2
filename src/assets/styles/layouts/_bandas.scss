@@ -32,16 +32,20 @@ $img-w-mob: 220px;
   }
 }
 
+@function imgHeight($size) {
+  @return $size * 0.6;
+}
+
 .band-tile--img {
   width: $img-w;
-  height: calc($img-w * 0.6);
+  height: imgHeight($img-w);
   object-fit: cover;
 }
 
 @media (max-width: $mq-max-width) {
   .band-tile--img {
     width: $img-w-mob;
-    height: calc($img-w-mob * 0.6);
+    height: imgHeight($img-w-mob);
   }
 }
 
