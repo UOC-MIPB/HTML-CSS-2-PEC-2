@@ -16,8 +16,8 @@ $img-w: 300px;
 $img-w-mob: 220px;
 
 .band-tile {
-  margin: 15px 10px;
   width: $img-w;
+  margin: 15px 10px;
 
   p {
     margin-block-start: 5px;
@@ -27,25 +27,25 @@ $img-w-mob: 220px;
 
 @media (max-width: $mq-max-width) {
   .band-tile {
-    margin: 15px 0;
     width: $img-w-mob;
+    margin: 15px 0;
   }
 }
 
-@function imgHeight($size) {
-  @return $size * 0.6;
+@function img-height($size) {
+  @return $size * 60 / 100;
 }
 
 .band-tile--img {
   width: $img-w;
-  height: imgHeight($img-w);
+  height: img-height($img-w);
   object-fit: cover;
 }
 
 @media (max-width: $mq-max-width) {
   .band-tile--img {
     width: $img-w-mob;
-    height: imgHeight($img-w-mob);
+    height: img-height($img-w-mob);
   }
 }
 
