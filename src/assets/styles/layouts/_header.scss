@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: $warning;
+
+  @media (max-width: $mqMaxWitdh) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: $warning;
+  }
+}
+
+.header--title {
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.header--icon {
+  font-size: 20px;
+}
+
+@media (max-width: $mqMaxWitdh) {
+  .header--nav {
+    margin-top: 10px;
+    font-size: small;
+  }
+}
