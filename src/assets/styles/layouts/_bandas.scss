@@ -1,0 +1,58 @@
+.bandas {
+  padding: 50px;
+}
+
+@media (max-width: $mq-max-width) {
+  .bandas {
+    $padding: 30px 5px;
+    // Only way to display it centered
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+$img-w: 300px;
+$img-w-mob: 220px;
+
+.band-tile {
+  margin: 15px 10px;
+  width: $img-w;
+
+  p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+}
+
+@media (max-width: $mq-max-width) {
+  .band-tile {
+    margin: 15px 0;
+    width: $img-w-mob;
+  }
+}
+
+.band-tile--img {
+  width: $img-w;
+  height: calc($img-w * 0.6);
+  object-fit: cover;
+}
+
+@media (max-width: $mq-max-width) {
+  .band-tile--img {
+    width: $img-w-mob;
+    height: calc($img-w-mob * 0.6);
+  }
+}
+
+.band-tile--title {
+  font-weight: 700;
+}
+
+.band-tile--subtitle {
+  font-style: italic;
+}
+
+.band-tile--description {
+  font-size: 13px;
+}
