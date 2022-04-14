@@ -8,4 +8,12 @@ $blue: #55d6f7;
 $green: #5dfa80;
 $yellow: #f4f670;
 
+$theme-colors: (
+  "primary": $purple,
+  "secondary": $blue,
+  "danger": $red,
+  "success": $green,
+  "warning": $yellow,
+);
+
 $mqMaxWitdh: 768px;
